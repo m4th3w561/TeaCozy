@@ -9,12 +9,33 @@ html {
     text-align: center;
 }
 
-nav {
+h2 {
+    line-height: 1.2rem;
+}
+
+header {
     width: 100%;
-    height: 69px;
     background-color: black;
     border-bottom: 1px solid seashell;
-    display: inline-flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+main,
+footer {
+    position: relative;
+    width: 93%;
+    top: 3rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Header Design */
+
+nav {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -28,9 +49,122 @@ li {
     display: inline-block;
 }
 
+li a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
     width: auto;
     height: 50px;
     margin: 0.45rem;
-    flex: 1 2;
+}
+
+
+/* ========= */
+
+
+/* Main Design */
+
+
+/* Mission Dic */
+
+#mission {
+    background-image: url("./images/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 31.81rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mission-content {
+    background-color: black;
+    width: 100%;
+    /*border: 1px red solid;*/
+}
+
+
+/* Featured Div */
+
+#featured {
+    width: 80%;
+    margin: 1.5rem auto 0;
+    /* border: 1px red solid; */
+}
+
+.featured-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /*border: 1px green solid; */
+}
+
+.featured-products img {
+    width: 300px;
+    height: 200px;
+}
+
+.featured-products {
+    margin: 0.5rem;
+    line-height: 0.5rem;
+}
+
+
+/* Locations Div */
+
+#locations {
+    background-image: url("./images/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22.72rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: red 1px solid; */
+    width: 100%;
+    overflow: scroll;
+}
+
+.box {
+    background-color: black;
+    width: 300px;
+    margin: 1rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
+
+/* ========= */
+
+
+/* Footer */
+
+footer {
+    height: 200px;
+}
+
+.left {
+    margin-top: 1rem;
+    text-align: left;
 }
