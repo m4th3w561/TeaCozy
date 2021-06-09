@@ -14,18 +14,23 @@ nav {
     height: 69px;
     background-color: black;
     border-bottom: 1px solid seashell;
-    display: flex;
-    border: 1px green solid;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 ul {
-    display: inline-flex;
-    justify-content: flex-end;
-    border: 1px red solid;
     list-style-type: none;
 }
 
 li {
     margin-right: 2rem;
     text-decoration: underline;
+    display: inline-block;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    margin: 0.45rem;
+    flex: 1 2;
 }
